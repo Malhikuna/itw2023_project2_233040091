@@ -10,7 +10,10 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&family=Rajdhani:wght@300&family=Roboto&family=Unbounded:wght@500&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&family=Rajdhani:wght@300&family=Roboto&family=Unbounded:wght@500&family=Oswald:wght@200;400&family=REM:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
@@ -26,7 +29,7 @@
     <!-- Nav -->
     <nav class="navbar navbar-expand-md navbar-dark sticky-top mynavbar">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Literasiku<i class="bx bxs-book-open" style="color: #520dc2"></i></a>
+        <a class="navbar-brand fw-bold" href="#"><img src="img/logo/literasiku.png" width="200px" height="50px" alt="" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <span><i class="ri-menu-line"></i></span>
         </button>
@@ -39,18 +42,19 @@
             <div class="navbar-nav ms-auto">
               <a class="nav-link text-dark" href="#">Home</a>
               <a class="nav-link text-dark" href="#about">About</a>
-              <a class="nav-link text-dark" href="#">Shop</a>
+              <a class="nav-link text-dark" href="#">Featured</a>
               <a class="nav-link text-dark" href="#">Arivals</a>
               <a class="nav-link text-dark" href="#">Reviews</a>
             </div>
 
             <div class="nav-kanan navbar-nav ms-auto m-1">
-              <button type="button" class="btn bg-transparent text-dark"><i class="ri-sun-fill"></i></button>
-              <button type="button" class="keranjang btn-danger rounded-2 text-light me-1" style="background-color: #520dc2">Login</button>
-              <button type="button" class="login btn-danger rounded-2 text-light" style="background-color: #520dc2">Keranjang Saya <i class="ri-shopping-cart-2-line"></i></button>
+              <!-- <button type="button" class="btn bg-transparent text-dark"><i class="ri-sun-fill"></i></button> -->
+              <!-- <button type="button" class="keranjang btn-danger rounded-2 text-light me-1" style="background-color: #520dc2">Login</button> -->
+              <button type="button" class="belanja-btn login btn-danger rounded-2 text-light" style="background-color: #520dc2">Belanja Sekarang <i class="ri-shopping-cart-2-line"></i></button>
             </div>
           </div>
-        </div>.
+        </div>
+        .
       </div>
     </nav>
     <!-- Akhir Nav -->
@@ -69,7 +73,7 @@
               <option value="Buku Sejarah"></option>
             </datalist>
           </div>
-          <button type="button" class="btn text-light text-light text-center"><i class="ri-search-line"></i></button>
+          <button type="button" class="btn text-light text-center"><i class="ri-search-line"></i></button>
         </div>
       </div>
     </section>
@@ -78,9 +82,9 @@
     <section class="hero text-center text-light">
       <main>
         <div class="row">
-          <div class="kiri col-8">
+          <div class="kiri col-sm-12 col-md-8">
             <h1 class="text-uppercase fw-bold">tingkatkan literasimu melalui buku</h1>
-            <p>menyediakan buku berbagai genre</p>
+            <p class="fw-bold">menyediakan buku berbagai genre</p>
             <div class="button row-cols-6">
               <button type="button" class="first-btn btn text-light mt-4 rounded-2" style="background-color: #520dc2"><a href="" class="text-decoration-none" style="color: white">Shop Now</a></button>
               <button type="button" class="second-btn btn text-light mt-4 rounded-2" style="background-color: white"><a href="" class="text-decoration-none" style="color: #520dc2">About Us</a></button>
@@ -134,20 +138,11 @@
               </ul>
             </div>
           </div>
-          <div class="kanan col-4">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="kanan col-sm-12 col-md-4" data-aos="fade-left" data-aos-duration="1500">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="1500">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="img/offline-stores/clay-banks-7VffLA8eGu4-unsplash.jpg" class="d-block w-100 rounded-4" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="img/offline-stores/clay-banks-fEVaiLwWvlU-unsplash.jpg" class="d-block w-100 rounded-4" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="img/offline-stores/freddie-marriage-w8JiSVyjy-8-unsplash.jpg" class="d-block w-100 rounded-4" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="img/offline-stores/jason-leung-89KfKyqh6dY-unsplash.jpg" class="d-block w-100 rounded-4" alt="..." />
                 </div>
                 <div class="carousel-item">
                   <img src="img/offline-stores/jason-leung-gWZzETD0Ad4-unsplash.jpg" class="d-block w-100 rounded-4" alt="..." />
@@ -160,16 +155,19 @@
                 </div>
               </div>
             </div>
-            <div class="alamat">
-              <h4>Kunjungi Toko <span style="color: #520dc2">Offline</span> Kami</h4>
-              <p><i class="ri-map-pin-fill" style="color: #520dc2"></i> Jl. Ahmad Yani No.8, Garut, Indonesia</p>
+            <div class="alamat" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="1500">
+              <h4>Kunjungi Toko <span class="text-danger">Offline</span> Kami</h4>
+              <p><i class="ri-map-pin-fill text-danger"></i> Jl. Ahmad Yani No.8, Garut, Indonesia</p>
             </div>
 
             <iframe
               class="peta rounded-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1500"
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d247.38873753167917!2d107.90033403634985!3d-7.2157500943470305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1702799903623!5m2!1sen!2sid"
-              width="80%"
-              height="40%"
+              width="330"
+              height="250"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -177,39 +175,60 @@
             ></iframe>
           </div>
         </div>
-
-        <!-- <div class="row position-relative">
-          <div class="left col-6 pt-5">
-          </div>
-          <div class="right col-6"></div>
-        </div> -->
       </main>
     </section>
     <!-- End Hero -->
 
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
+      <div class="row text-light">
+        <div class="container">
+          <div class="background-text m-auto mt-3" data-aos="fade-up" data-aos-duration="1500">
+            <h1 class="text-center text-warning" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">~About Us~</h1>
+            <p class="fs-5 m-auto" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400">
+              Literasiku adalah sebuah tempat bagi kalian yang senang membaca buku, toko kami menyediakan buku terjemahan dan juga impor yang terdiri dari berbagai genre dan juga katagori. Tidak hanya buku fisik, kalian pun bisa menyewa
+              buku dalam bentuk e-book dengan batas waktu penyewaan yang telah ditentukan. Semua buku di toko kami 100% terjamin kualitasnya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="banner">
       <div class="row justify-content-betweend">
-        <div class="left-side col-2"></div>
-        <div class="right-side col-9">
-          <div id="carouselExampleRide" class="carousel slide">
+        <div class="left-side col-sm-12 col-md-2">
+          <div class="ls-content">
+            <h1 class="text-warning text-center mt-4">~Genres~</h1>
+          </div>
+          <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="" class="d-block w-100 rounded-4" alt="..." />
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="right-side col-sm-12 col-md-9">
+          <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="slide1 carousel-item active" style="background-image: url(img/slides/slide1.jpg)">
+              <div class="slide1 carousel-item active" style="background-image: url(img/slides/slide2.png)">
                 <div class="container">
-                  <h1>Harga Special</h1>
+                  <!-- <h1>Harga Special</h1>
                   <h1>Akhir Tahun</h1>
                   <p class="fw-bold">khusus untuk semua buku fiksi</p>
                   <p class="fw-bold">mulai 1 - 31 Desember 2023</p>
                   <p>*S&K Berlaku</p>
-                  <a href="#" class="btn btn-primary">Lebih Lanjut</a>
+                  <a href="#" class="btn btn-primary">Lebih Lanjut</a> -->
                 </div>
               </div>
-              <div class="carousel-item" style="background-image: url(img/slides/slide2.png)">
+              <div class="carousel-item" style="background-image: url(img/slides/sci-fi-1647637695.jpg)">
                 <div class="container"></div>
               </div>
               <div class="carousel-item" style="background-image: url(img/slides/slide3.jpeg)">
@@ -228,15 +247,576 @@
         </div>
       </div>
     </section>
-    <!-- End About -->
+    <!-- End Banner -->
 
-    <!-- Menu -->
-    <section class="menu">
-      <div class="container">
-        <div class="row"></div>
+    <!-- Featured -->
+    <section class="featured">
+      <div class="row p-4">
+        <h1 class="text-center" style="color: #520dc2">~Featured~</h1>
+        <div class="card-books row row-cols-sm-2 row-cols-md-5 g-4 m-auto">
+          <div class="col">
+            <div class="card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+              <img src="img/books/1.jpg" class="card-img-top" height="250" alt="..." />
+              <div class="card-body">
+                <div class="text-content">
+                  <h5 class="card-title">Filosofi Teras</h5>
+                  <h6>Henry Manampiring</h6>
+                  <h5>Rp90.000</h5>
+                  <p class="card-text"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i> 237 reviews</p>
+                </div>
+
+                <div class="beli">
+                  <svg class="keranjang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z"
+                      fill=""
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300">
+              <img src="img/books/2.jpg" class="card-img-top" height="250" alt="..." />
+              <div class="card-body">
+                <div class="text-content">
+                  <h5 class="card-title">Laut Bercerita</h5>
+                  <h6>Leila S. Chudori</h6>
+                  <h5>Rp110.000</h5>
+                  <p class="card-text"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i> 128 reviews</p>
+                </div>
+
+                <div class="beli">
+                  <svg class="keranjang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z"
+                      fill=""
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+              <img src="img/books/3.jpg" class="card-img-top" height="250" alt="..." />
+              <div class="card-body">
+                <div class="text-content">
+                  <h5 class="card-title">1984</h5>
+                  <h6>George Orwell</h6>
+                  <h5>Rp70.000</h5>
+                  <p class="card-text"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i> 137 reviews</p>
+                </div>
+
+                <div class="beli">
+                  <svg class="keranjang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z"
+                      fill=""
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300">
+              <img src="img/books/4.jpg" class="card-img-top" height="250" alt="..." />
+              <div class="card-body">
+                <div class="text-content">
+                  <h5 class="card-title">Find Your Why</h5>
+                  <h6>Simon Sinek</h6>
+                  <h5>Rp100.000</h5>
+                  <p class="card-text"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i> 529 reviews</p>
+                </div>
+
+                <div class="beli">
+                  <svg class="keranjang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z"
+                      fill=""
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+              <img src="img/books/5.jpg" class="card-img-top" height="250" alt="..." />
+              <div class="card-body">
+                <div class="text-content">
+                  <h5 class="card-title">This Is Marketing</h5>
+                  <h6>Seth Godin</h6>
+                  <h5>Rp100.000</h5>
+                  <p class="card-text"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i> 493 reviews</p>
+                </div>
+
+                <div class="beli">
+                  <svg class="keranjang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z"
+                      fill=""
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-alt">
+            <div class="card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+              <img src="img/books/5.jpg" class="card-img-top" height="250" alt="..." />
+              <div class="card-body">
+                <div class="text-content">
+                  <h5 class="card-title">This Is Marketing</h5>
+                  <h6>Seth Godin</h6>
+                  <h5>Rp100.000</h5>
+                  <p class="card-text"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i> 493 reviews</p>
+                </div>
+
+                <div class="beli">
+                  <svg class="keranjang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z"
+                      fill=""
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Arivals -->
+    <section class="arivals" id="arivals">
+      <div class="row p-4">
+        <h1 class="text-center" style="color: #520dc2">~New Arivals~</h1>
+        <div class="card-books row row-cols-sm-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
+              <div class="row g-0">
+                <div class="col-md-4 img-content">
+                  <img src="img/books/6.jpg" height="400px" width="600px" class="img-fluid rounded-start" alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="text-content">
+                      <h5 class="card-title">The Selfish Gene</h5>
+                      <h6>Richard Dawkins</h6>
+                      <h5>Rp110.000</h5>
+                      <p class="card-text"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i> 58 reviews</p>
+                      <p class="sinopsis">Setelah Charles Darwin mengajukan evolusi melalui seleksi sebagai penjelasan keragaman kehidupan, dalam The Selfish Gene Richard Dawkins memperluasnya dengan memperkenalkan...</p>
+                    </div>
+
+                    <div class="beli">
+                      <svg class="keranjang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                          d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z"
+                          fill=""
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="menu">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                          d="M12 3C11.175 3 10.5 3.675 10.5 4.5C10.5 5.325 11.175 6 12 6C12.825 6 13.5 5.325 13.5 4.5C13.5 3.675 12.825 3 12 3ZM12 18C11.175 18 10.5 18.675 10.5 19.5C10.5 20.325 11.175 21 12 21C12.825 21 13.5 20.325 13.5 19.5C13.5 18.675 12.825 18 12 18ZM12 10.5C11.175 10.5 10.5 11.175 10.5 12C10.5 12.825 11.175 13.5 12 13.5C12.825 13.5 13.5 12.825 13.5 12C13.5 11.175 12.825 10.5 12 10.5Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">
+              <div class="row g-0">
+                <div class="col-md-4 img-content">
+                  <img src="img/books/7.jpg" height="400px" width="600px" class="img-fluid rounded-start" alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="text-content">
+                      <h5 class="card-title">Tinking, Fast And Slow</h5>
+                      <h6>Daniel Kahneman</h6>
+                      <h5>Rp160.000</h5>
+                      <p class="card-text"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i> 328 reviews</p>
+                      <p class="sinopsis">Daniel Kahneman adalah salah satu pemikir paling penting abad ini. Gagasannya berdampak mendalam dan luas di berbagai bidang—termasuk ekonomi, pengobatan, dan...</p>
+                    </div>
+
+                    <div class="beli">
+                      <svg class="keranjang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                          d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z"
+                          fill=""
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="menu">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                          d="M12 3C11.175 3 10.5 3.675 10.5 4.5C10.5 5.325 11.175 6 12 6C12.825 6 13.5 5.325 13.5 4.5C13.5 3.675 12.825 3 12 3ZM12 18C11.175 18 10.5 18.675 10.5 19.5C10.5 20.325 11.175 21 12 21C12.825 21 13.5 20.325 13.5 19.5C13.5 18.675 12.825 18 12 18ZM12 10.5C11.175 10.5 10.5 11.175 10.5 12C10.5 12.825 11.175 13.5 12 13.5C12.825 13.5 13.5 12.825 13.5 12C13.5 11.175 12.825 10.5 12 10.5Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-books row row-cols-sm-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
+              <div class="row g-0">
+                <div class="col-md-4 img-content">
+                  <img src="img/books/8.jpeg" height="400px" width="600px" class="img-fluid rounded-start" alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="text-content">
+                      <h5 class="card-title">The Alchemist (English)</h5>
+                      <h6>Paulo Coelho</h6>
+                      <h5>Rp90.000</h5>
+                      <p class="card-text"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i> 648 reviews</p>
+                      <p class="sinopsis">Paulo Coelho's enchanting novel has inspired a devoted following around the world. This story, dazzling in its powerful simplicity and...</p>
+                    </div>
+
+                    <div class="beli">
+                      <svg class="keranjang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                          d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z"
+                          fill=""
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="menu">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                          d="M12 3C11.175 3 10.5 3.675 10.5 4.5C10.5 5.325 11.175 6 12 6C12.825 6 13.5 5.325 13.5 4.5C13.5 3.675 12.825 3 12 3ZM12 18C11.175 18 10.5 18.675 10.5 19.5C10.5 20.325 11.175 21 12 21C12.825 21 13.5 20.325 13.5 19.5C13.5 18.675 12.825 18 12 18ZM12 10.5C11.175 10.5 10.5 11.175 10.5 12C10.5 12.825 11.175 13.5 12 13.5C12.825 13.5 13.5 12.825 13.5 12C13.5 11.175 12.825 10.5 12 10.5Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">
+              <div class="row g-0">
+                <div class="col-md-4 img-content">
+                  <img src="img/books/9.jpeg" height="400px" width="600px" class="img-fluid rounded-start" alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="text-content">
+                      <h5 class="card-title">Homo Deus (English)</h5>
+                      <h6>Yuah Noah Harari</h6>
+                      <h5>Rp140.000</h5>
+                      <p class="card-text"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i> 148 reviews</p>
+                      <p class="sinopsis">Yuval Noah Harari, author of the critically-acclaimed , returns with an equally original, compelling, and...</p>
+                    </div>
+
+                    <div class="beli">
+                      <svg class="keranjang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                          d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z"
+                          fill=""
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="menu">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                          d="M12 3C11.175 3 10.5 3.675 10.5 4.5C10.5 5.325 11.175 6 12 6C12.825 6 13.5 5.325 13.5 4.5C13.5 3.675 12.825 3 12 3ZM12 18C11.175 18 10.5 18.675 10.5 19.5C10.5 20.325 11.175 21 12 21C12.825 21 13.5 20.325 13.5 19.5C13.5 18.675 12.825 18 12 18ZM12 10.5C11.175 10.5 10.5 11.175 10.5 12C10.5 12.825 11.175 13.5 12 13.5C12.825 13.5 13.5 12.825 13.5 12C13.5 11.175 12.825 10.5 12 10.5Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-books row row-cols-sm-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
+              <div class="row g-0">
+                <div class="col-md-4 img-content">
+                  <img src="img/books/10.jpg" height="400px" width="600px" class="img-fluid rounded-start" alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="text-content">
+                      <h5 class="card-title">Terdidik (Educated)</h5>
+                      <h6>Tara Westover</h6>
+                      <h5>Rp110.000</h5>
+                      <p class="card-text"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i> 98 reviews</p>
+                      <p class="sinopsis">Lahir dari keluarga komunitas penyintas di pegunungan Idaho, Tara Westover berusia tujuh belas tahun saat pertama kali menginjakkan kakinya di...</p>
+                    </div>
+
+                    <div class="beli">
+                      <svg class="keranjang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                          d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z"
+                          fill=""
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="menu">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                          d="M12 3C11.175 3 10.5 3.675 10.5 4.5C10.5 5.325 11.175 6 12 6C12.825 6 13.5 5.325 13.5 4.5C13.5 3.675 12.825 3 12 3ZM12 18C11.175 18 10.5 18.675 10.5 19.5C10.5 20.325 11.175 21 12 21C12.825 21 13.5 20.325 13.5 19.5C13.5 18.675 12.825 18 12 18ZM12 10.5C11.175 10.5 10.5 11.175 10.5 12C10.5 12.825 11.175 13.5 12 13.5C12.825 13.5 13.5 12.825 13.5 12C13.5 11.175 12.825 10.5 12 10.5Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">
+              <div class="row g-0">
+                <div class="col-md-4 img-content">
+                  <img src="img/books/11.jpg" height="400px" width="600px" class="img-fluid rounded-start" alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="text-content">
+                      <h5 class="card-title">The Lord of The Rings: Dua Menara</h5>
+                      <h6>J.R.R Tolkien</h6>
+                      <h5>Rp80.000</h5>
+                      <p class="card-text"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i> 128 reviews</p>
+                      <p class="sinopsis">Akibat serangan Orc, rombongan pembawa cincin tercerai-berai. Aragorn, Legolas, dan Gimli, meneruskan perjalanan ke negeri orang-orang Rohan. Bersam...</p>
+                    </div>
+
+                    <div class="beli">
+                      <svg class="keranjang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                          d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z"
+                          fill=""
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="menu">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                          d="M12 3C11.175 3 10.5 3.675 10.5 4.5C10.5 5.325 11.175 6 12 6C12.825 6 13.5 5.325 13.5 4.5C13.5 3.675 12.825 3 12 3ZM12 18C11.175 18 10.5 18.675 10.5 19.5C10.5 20.325 11.175 21 12 21C12.825 21 13.5 20.325 13.5 19.5C13.5 18.675 12.825 18 12 18ZM12 10.5C11.175 10.5 10.5 11.175 10.5 12C10.5 12.825 11.175 13.5 12 13.5C12.825 13.5 13.5 12.825 13.5 12C13.5 11.175 12.825 10.5 12 10.5Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blogs & Reviews -->
+    <section class="reviews" id="reviews">
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <div class="blog p-3">
+            <h5 class="text-center" style="font-family: Unbounded; color: #520dc2">~Our Blogs~</h5>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <a href="#" class="col">
+                <div class="card">
+                  <img src="img/blogs/clay-banks-w_qTfiPbjbg-unsplash.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <div class="tag-line text-center text-light mb-2">POPULAR</div>
+                    <h5 class="card-title">Inilah Manfaat Membaca Buku di Pagi Hari</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, reprehenderit...</p>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="col">
+                <div class="card">
+                  <img src="img/blogs/joel-muniz-XqXJJhK-c08-unsplash.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <div class="tag-line text-center text-light mb-2">POPULAR</div>
+                    <h5 class="card-title">Rekomendasi Buku di Awal Tahun</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, ex...</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="review p-3">
+            <h3 class="text-center" style="font-family: Unbounded; color: gold">~Reviews~</h3>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="slide1 carousel-item active">
+                  <div class="container text-center">
+                    <div class="text-top">
+                      <h4 class="">HIKMAL MAULANA</h4>
+                      <h5 class="">CEO AGENCY</h5>
+                      <p class="card-text"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+                    </div>
+                    <div class="text-content">
+                      <i class="ri-double-quotes-l"></i>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure praesentium nam impedit voluptates laboriosam enim, sunt dicta perspiciati.</p>
+                      <i class="ri-double-quotes-r"></i>
+                    </div>
+                    <img src="img/profile/1.jpg" alt="Hikmal" />
+                  </div>
+                </div>
+                <div class="slide2 carousel-item">
+                  <div class="container text-center">
+                    <div class="text-top">
+                      <h4 class="">MUROD</h4>
+                      <h5 class="">AGENCY</h5>
+                      <p class="card-text"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+                    </div>
+                    <div class="text-content">
+                      <i class="ri-double-quotes-l"></i>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem delectus ipsum nihil? Odit, enim reprehenderit autem quod atque dicta est.</p>
+                      <i class="ri-double-quotes-r"></i>
+                    </div>
+                    <img src="img/profile/2.jpg" alt="Murod" />
+                  </div>
+                </div>
+                <div class="slide3 carousel-item">
+                  <div class="container text-center">
+                    <div class="text-top">
+                      <h4 class="">VALDRIC</h4>
+                      <h5 class="">AGENCY</h5>
+                      <p class="card-text"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+                    </div>
+                    <div class="text-content">
+                      <i class="ri-double-quotes-l"></i>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, reprehenderit? Autem harum, nisi incidunt suscipit quibusdam dolore.</p>
+                      <i class="ri-double-quotes-r"></i>
+                    </div>
+                    <img src="img/profile/3.jpg" alt="Valdric" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="kiri">
+            <div class="contact-content"></div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <div class="kanan">
+            <div class="contact-content p-4 text-light">
+              <h4 class="text-center">~Contact~</h4>
+              <div class="input-group">
+                <span class="input-group-text">First and last name</span>
+                <input type="text" aria-label="First name" class="form-control" />
+                <input type="text" aria-label="Last name" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="button" class="btn btn-primary">Kirim</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="brand">
+              <img src="img/logo/literasiku.png" width="250px" height="65px" class="me-3" alt="" />
+            </div>
+
+            <div class="sosmed mt-5 ms-5 text-center">
+              <ul>
+                <li>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-facebook-box-fill"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-threads-line"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <h5>Quick Menu</h5>
+            <div class="footer-menu fs-5">
+              <a class="nav-link text-dark" href="#">Home</a>
+              <a class="nav-link text-dark" href="#about">About</a>
+              <a class="nav-link text-dark" href="#feature">Featured</a>
+              <a class="nav-link text-dark" href="#arivals">Arivals</a>
+              <a class="nav-link text-dark" href="#reviews">Reviews</a>
+            </div>
+          </div>
+          <div class="col-2">
+            <h5>Our Contact</h5>
+            <div class="footer-contact fs-5">
+              <a class="nav-link text-dark" href="#"><i class="ri-phone-fill"></i></a>
+              <a class="nav-link text-dark" href="#">(+62)896-6385-0026</a>
+              <a class="nav-link text-dark" href="#"><i class="ri-mail-fill"></i></a>
+              <a class="nav-link text-dark" href="#">hikmal767@gmail.com</a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="aplikasi">
+              <h5>Aplikasi Kami Sudah Tersedia Di</h5>
+              <a href=""><img src="img/logo/app-store.png" width="150px" height="auto" alt="" /></a>
+              <a href=""><img src="img/logo/play-store.png" width="180px" height="77px" alt="" /></a>
+            </div>
+
+            <div class="afiliasi mt-3">
+              <h5>Kami Berafiliasi Dengan</h5>
+              <img src="img/logo/dana.png" width="100px" alt="" />
+              <img src="img/logo/tokopedia.png" width="100px" alt="" />
+              <img src="img/logo/JT-Express.png" width="100px" alt="" />
+            </div>
+          </div>
+          <div class="text text-center text-light">
+            <p><i class="ri-copyright-line"></i> Copyright <span class="text-warning">2024</span> | Design By <span class="text-warning">Hikmal</span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
