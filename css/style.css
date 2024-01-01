@@ -1,6 +1,7 @@
 * {
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -21,17 +22,6 @@ body {
   border-bottom: 5px solid #520dc2;
   /* position: relative; */
 }
-
-/* .mynavbar::before {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: black;
-} */
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-little {
@@ -67,18 +57,6 @@ body {
   font-size: 1.3rem;
   align-items: center;
 }
-
-/* .mynavbar .offcanvas-body .navbar-nav a::after {
-  content: "";
-  width: 0%;
-  position: absolute;
-  bottom: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 2px;
-  background: #520dc2;
-  transition: 0.2s;
-} */
 
 .mynavbar .offcanvas-body .navbar-nav a::before {
   content: "";
@@ -128,12 +106,11 @@ body {
   border-radius: 10px;
   height: 100%;
   width: 0%;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 .belanja-btn:hover::before {
   width: 100%;
-  /* background-color: #8a2be2 !important; */
 }
 /* Akhir Nav */
 
@@ -163,7 +140,6 @@ body {
 }
 
 /* Hero */
-
 .hero {
   position: relative;
   border: 5px solid #520dc2;
@@ -194,7 +170,7 @@ body {
 
 .hero .first-btn:hover,
 .hero .second-btn:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .hero .sosmed {
@@ -218,9 +194,6 @@ body {
 
 .hero .kiri {
   padding-top: 200px;
-}
-
-.hero .row {
 }
 
 main::before {
@@ -263,7 +236,6 @@ main::after {
   background-color: #520dc2;
   top: 120px;
   left: 120px;
-  /* rotate: 20deg; */
 }
 
 .hero .icons .icon-2 {
@@ -278,12 +250,22 @@ main::after {
 
 .hero .icons .icon-4 {
   bottom: 150px;
-  right: 610px;
+  right: 620px;
 }
 
 .hero .icons .icon-5 {
   top: 280px;
   left: 30px;
+}
+
+.hero .icons .icon-6 {
+  background-color: deepskyblue;
+  top: 120px;
+  right: 555px;
+}
+
+.hero .icons .icon-6 svg {
+  rotate: 180deg;
 }
 
 .hero .kanan {
@@ -329,7 +311,7 @@ main::after {
   z-index: -1;
 }
 
-.kanan .carousel img {
+.hero .kanan .carousel img {
   border: 3px solid white;
 }
 
@@ -338,7 +320,6 @@ main::after {
   padding: 4px;
   height: 40vh;
   margin: 2%;
-  /* background-color: #8a2be2; */
   border-radius: 20px;
   border: 5px solid #520dc2;
   position: relative;
@@ -374,12 +355,6 @@ main::after {
   border-radius: 20px;
 }
 
-/* .about .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .about::before {
   content: "";
   position: absolute;
@@ -388,7 +363,6 @@ main::after {
   width: 100%;
   height: 40vh;
   z-index: -1;
-  /* background-image: url(../img/offline-stores/freddie-marriage-w8JiSVyjy-8-unsplash.jpg); */
   background-image: url(../img/bg1.jpg);
   background-attachment: fixed;
   border-radius: 20px;
@@ -404,21 +378,16 @@ main::after {
   height: 70vh;
 }
 
-/* .banner .left-side .carousel {
-  width: 180px;
-  margin: auto;
-  margin-bottom: 12px;
-  border: 4px solid #8a2be2;
-  border-radius: 50%;
-} */
-
-.banner .left-side .carousel img {
-  height: 180px;
-  border-radius: 50% !important;
-}
-
 .banner .left-side {
-  position: relative;
+  height: 70vh;
+  border-radius: 20px;
+  position: absolute;
+  left: 2%;
+  width: 20%;
+  border: 5px solid #520dc2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner .left-side::before {
@@ -437,84 +406,17 @@ main::after {
   filter: blur(2px);
 }
 
-.banner .right-side .carousel-item {
-  /* width: 98.5%; */
-  width: 100%;
-  height: 70vh;
-  position: relative;
-  color: white;
-  border: 4px solid #520dc2;
-  border-radius: 20px;
-  background-position: center;
-  background-size: cover;
-}
-
-.banner .right-side {
-  margin-right: 15px;
-}
-
-/* .banner .slide1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40%;
-  height: 100%;
-  background-color: #8a2be2;
-  border-radius: 20px 0 0 20px;
-} */
-
-.banner .slide1 h1 {
-  font-family: "Roboto";
-  text-shadow: var(--shadow);
-  font-weight: 600;
-  font-size: 3rem;
-  color: gold;
-}
-
-.banner .slide1 p {
-  font-family: "Open Sans";
-  width: 40%;
-}
-
-.banner .right-side .carousel-item .btn {
-  box-shadow: var(--shadow);
-  z-index: 9999;
-}
-
-.banner .right-side button {
-  z-index: 1 !important;
-}
-
-.banner .right-side .carousel-item .container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 50px;
-}
-
-.banner .left-side {
-  /* background-color: #520dc2; */
-  height: 70vh;
-  /* margin-left: 40px; */
-  /* width: 14%;
-  border-radius: 20px; */
-  border-radius: 20px;
-  position: absolute;
-  left: 2%;
-  width: 20%;
-  border: 5px solid #520dc2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .banner .left-side .ls-content {
   width: 98%;
   height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
   border-radius: 20px;
   position: relative;
+  overflow: hidden;
 }
 
 .banner .left-side .ls-content::before {
@@ -533,11 +435,51 @@ main::after {
 
 .banner .left-side h1 {
   font-family: "Abounded";
+  color: gold;
+}
+
+.banner .left-side .ls-content .heading {
+  margin-top: -300px;
+  width: 80%;
+  height: 50px;
+  justify-self: center;
+  background-color: black;
+}
+
+.banner .left-side .ls-content button {
+  background-color: #9e5cdc;
+  width: 130px;
+}
+
+.banner .left-side .ls-content button:nth-child(odd) {
+  margin-right: 5%;
+}
+
+.banner .left-side .ls-content button:nth-child(even) {
+  background-color: #ba79f7;
+  margin-left: 5%;
+}
+
+.banner .left-side .ls-content button:hover {
+  opacity: 0.9 !important;
+  transition: 0.1s;
 }
 
 .banner .right-side {
+  margin-right: 15px;
   position: absolute;
   right: 0;
+}
+
+.banner .right-side .carousel-item {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  color: white;
+  border: 5px solid #520dc2;
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
 }
 
 /* Featured */
@@ -548,7 +490,6 @@ main::after {
   border-radius: 20px;
   background-color: white;
   overflow: hidden;
-  /* background-color: #8a2be2; */
 }
 
 .featured h1 {
@@ -660,8 +601,25 @@ main::after {
   border: 5px solid #520dc2;
   border-radius: 20px;
   background-color: white;
-  overflow-x: hidden;
+  overflow: hidden;
   /* background-color: #520dc2; */
+}
+
+.arivals button {
+  background-color: white;
+  border: 3px solid #520dc2;
+  padding: 0 !important;
+  height: 20px;
+  width: 70px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.arivals button:hover {
+  opacity: 0.8;
 }
 
 .arivals h1 {
@@ -733,7 +691,7 @@ main::after {
   width: 97%;
   height: 70vh;
   /* background-color: #8a2be2; */
-  border: 4px solid #520dc2;
+  border: 5px solid #520dc2;
   border-radius: 20px;
   background-color: white;
 }
@@ -743,7 +701,6 @@ main::after {
 }
 
 .blog .tag-line {
-  background-color: crimson;
   width: 100px;
   font-family: "Oswald";
   border-radius: 10px;
@@ -906,8 +863,8 @@ main::after {
   width: 100%;
   z-index: -1;
   height: 100%;
-  /* background-color: #8a2be2; */
-  background-image: url(../img/bg2.jpg);
+  background-color: #520dc2;
+  /* background-image: url(../img/bg2.jpg); */
   background-position: center;
   background-size: cover;
   border: 5px solid #520dc2;
@@ -952,21 +909,60 @@ main::after {
   width: 90%;
   height: 65vh;
   position: relative;
+  padding-top: 20px;
   /* background-color: #520dc2; */
 }
 
-.contact .kiri .contact-content::before {
-  border-radius: 20px;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-  height: 100%;
-  background-color: #520dc2;
-  opacity: 0.95;
-  border: 5px solid white;
+.contact .kiri .contact-content h1,
+.contact .kiri .contact-content h3 {
+  font-family: "Ubounded";
+  color: gold;
+}
+
+.contact .kiri .contact-content h3 {
+  margin-top: -20px;
+}
+
+.contact .kiri .contact-content i {
+  color: gold;
+}
+
+.contact .kiri .contact-content .text-content {
+  height: 120px;
+  width: 340px;
+  margin: auto;
+  text-align: justify;
+}
+
+.contact .kiri .contact-content .sosmed {
+  height: 60px;
+  width: 300px;
+  margin: auto;
+}
+
+.contact .kiri .contact-content .sosmed ul {
+  display: flex;
+  height: 60px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  /* gap: 10px; */
+}
+
+.contact .kiri .contact-content .sosmed li {
+  height: 40px;
+  width: 40px;
+  justify-self: center;
+  margin-right: 26px;
+}
+
+.contact .kiri .contact-content .sosmed li:hover {
+  opacity: 0.8;
+}
+
+.contact .kiri .contact-content .sosmed a {
+  text-decoration: none;
+  font-size: 2rem;
 }
 
 .contact .kanan .contact-content h4 {
@@ -1353,4 +1349,7 @@ footer .text {
   footer img {
     display: none;
   }
+}
+
+@media screen and (max-width: 450px) {
 }
